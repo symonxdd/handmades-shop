@@ -11,12 +11,12 @@
 import { ref } from 'vue';
 import ProductCard from '@/components/ProductCard.vue';
 
-// const baseURL = import.meta.env.MODE === 'production' ? '/handmades-shop' : '';
-// console.log(baseURL);
+const baseURL = import.meta.env.BASE_URL;
+console.log("baseURL", baseURL);
 
 const products = ref([
-  { id: 'p1', title: 'Brillenband (oranje)', price: 5.99, image: `/images/img1.jpg` },
-  { id: 'p2', title: 'Brillenband (blauw)', price: 12.99, image: '/images/img2.jpg' }
+  { id: 'p1', title: 'Brillenband (oranje)', price: 5.99, image: `${baseURL}images/img1.jpg` },
+  { id: 'p2', title: 'Brillenband (blauw)', price: 12.99, image: `${baseURL}images/img2.jpg` }
 ]);
 </script>
 
