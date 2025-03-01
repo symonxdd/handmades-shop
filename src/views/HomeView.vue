@@ -12,7 +12,6 @@ import { ref } from 'vue';
 import ProductCard from '@/components/ProductCard.vue';
 
 const baseURL = import.meta.env.BASE_URL;
-console.log("baseURL", baseURL);
 
 const products = ref([
   { id: 'p1', title: 'Brillenband (oranje)', price: 5.99, image: `${baseURL}images/img1.jpg` },
